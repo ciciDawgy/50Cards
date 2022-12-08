@@ -1,0 +1,333 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    cursor: pointer;
+}
+
+nav {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 1;
+}
+
+li:hover {
+    color:red;
+    transition: 0.4s linear;
+}
+
+.top-bar {
+    width: 100%;
+    background-color: darkblue;
+    color: rgb(250, 246, 246);
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 15px;
+    margin-right: 15px;
+}
+
+ .fa-heart {
+    color: red;
+}
+.top-bar p, i, a {
+    padding-right: 10px;
+}
+
+.top-bar a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.top-bar a:hover {
+    color: red;
+    transition: color 1s;
+}
+
+.dropdown {
+    background-color: #fff;
+    color: #333;
+    padding: 50px;
+    display: none;
+}
+
+.dropdown:hover {
+    display: block;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    margin: auto;
+}
+
+
+.menu li {
+    display: flex;
+    flex: 1;
+}
+
+.menu img {
+    width: 30%;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 150px;
+  padding-bottom: 20px;
+  padding-left: 40px;
+  font-size: 18px;
+}
+
+
+.contact .fas {
+    color: red;
+}
+
+ .horizontal {
+     background-color: rgb(212, 212, 212);
+     height: 0.25px;
+     margin: 20px 0;
+ }
+.showcase {
+width: 100%;
+height: 400px;
+background: url('sky.jpg') no-repeat center/cover;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+color: #fff;
+font-weight: bolder;
+}
+
+.showcase h1 {
+    font-size: 45px;
+}
+
+.showcase h5 {
+    padding-top: 5px;
+    font-size: 15px;
+}
+
+.showcase .fas:hover {
+   opacity: 0.8;
+}
+
+.btn .fas {
+    color: #fff;
+    z-index: 1;
+    border-radius: 50%;
+    font-size: 20px;
+    background: cornflowerblue;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.gridy {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 50px;
+    position: relative;
+}
+
+.gridy h2 {
+    font-size: 23px;
+    text-align: center;
+    margin-left: 25px;
+    word-wrap: break-word;
+}
+
+.gridy p {
+    line-height: 1.5;
+    margin-top: 18px;
+    margin-left: 75px;
+}
+.gridy .fas {
+    position: absolute;
+    top: 12px;
+    color: red;
+    font-size: 25px;
+}
+
+
+.blocky {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 30px;
+    line-height: 1.5;
+    position: relative;
+    font-size: 18px;
+}
+
+.blocky h2, p {
+   width: 70%;
+   margin: auto;
+   padding: 40px;
+}
+
+.blocky div:hover {
+    background-color: rgba(245, 210, 210, 0.5);
+    transition: backgroud-color 1s;
+}
+
+.blocky h2:hover {
+    color: red;
+}
+
+.blocky .fas {
+    color: red;
+    font-size: 50px;
+    position: absolute;
+    top: 30px;
+}
+
+.frame {
+   
+}
+
+.picFrame {
+    transform: translateX(150px);
+}
+
+.picFrame:hover {
+   transform: scale(1, 1);
+}
+
+.fnameContent {
+    display: flex;
+    margin-left: -1000px;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.giraffe {
+    width: 15%;
+}
+
+.giraffe img {
+    display: flex
+  }
+  
+  .giraffe img {
+     transition: transform 250ms ease-out
+  }
+  
+  .giraffe:hover img{
+    transform: scale(1.1);
+    transform-origin: center
+  }
+
+.framebrown {
+
+    width: 28%;
+    height: 100%;
+}
+
+.clearVision  {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 100px 30px;
+  opacity: 0;
+  transition: all 6s ease-in-out;
+}
+
+.active {
+    opacity: 1;
+}
+
+.clearVision2 {
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: first baseline;
+    flex-direction: column;
+    font-size: 19px;
+    line-height: 1.5;
+    width: 60%;;
+    opacity: 1;
+}
+
+
+.clearVision img {
+    width: 450px;
+    height: 450px;
+    border-radius: 45%;
+    margin-left: 25px;
+}
+
+.clearVision a {
+    color: red;
+    text-decoration: underline;
+}
+
+.coronavirus {
+    background-color: paleturquoise;
+    opacity: .8;
+    text-align: left;
+}
+
+.covid h4 {
+    padding: 40px 0;
+}
+
+.covid {
+    width: 90%;
+    transform: translateX(20%);
+}
+
+.services {
+   position: relative;
+   overflow: hidden;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   background-color: paleturquoise;
+}
+
+.serviceImg img {
+   width: 350px;
+   height: 300px;
+   margin-left: 15px;
+} 
+
+.services2 {
+    display: flex;
+    background-color: #fff;
+    transform: translateY(-90px);
+    height: 100px;
+    width: 100px;
+    margin: 0 auto;
+}
+
+/*.services2 > p {
+    margin: 0 auto;
+}*/

@@ -1,0 +1,30 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+p::before {
+    content: attr(par);
+    font-size: 2.3rem;
+    background-color: #666;
+    color: #eee;
+    transform: rotate(-20deg);
+    display: inline-block;
+    line-height: 3rem;
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+    margin-right: 10px;
+    text-align: center;
+}
+
+p:nth-child(odd)::before{
+    transform: rotate(20deg);
+}
